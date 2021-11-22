@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="options">
+        <div>
+            <form action="">
+                <label for="score">Paljonko pisteitä tarvitsee voittamiseen</label>
+                <input type="number" id="score" name="score"><br>
+                <label for="add"> Anna pelaajan nimi ja paina ( Lisää )</label>
+                <input type="text" id="add" name="add">
+            </form>
+        </div>
+        <div>
+            <button onclick="addPlayer()">
+                <h6>Lisää</h6>
+            </button>
+            <button onclick="game()">
+                <h6>Aloita Peli</h6>
+            </button>
+        </div>
+        <div>
+            <h3 id="optAlert"></h3>
+        </div>
+    </div>
+    <div id="peli">
+        <div class="main">
+            <div>
+                <h3 id="vuoro">gay</h3>
+            </div>
+            <div class="nappula">
+                <button onclick="roll()">
+                    <div class="nappi">
+                        <h2>
+                            Heitä noppaa
+                        </h2>
+                    </div>
+                </button>
+                <button onclick="endTurn()">
+                    <div class="nappi">
+                        <h2>
+                            Lopeta vuorosi
+                        </h2>
+                    </div>
+                </button>
+            </div>
+            <div class="images">
+                <div><img src="img/six.png" alt="randomSide" id="100"></div>
+                <div><img src="img/six.png" alt="randomSide" id="101"></div>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <p id="b"></p>
+        </div>
+        <div>
+            <h3 id="gameAlert">test</h3>
+        </div>
+    </div>   
+</body>
+<script src="stupid.js"></script>
+</html>
