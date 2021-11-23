@@ -104,12 +104,16 @@ function addPlayer() {
     players.push(document.getElementById("add").value);
     scores.push(0);
     let text = "<ul>";
+    let text2 = "<ul>";
     players.forEach(spare);
     text += "</ul>";
+    text2 += "</ul>";
     document.getElementById("b").innerHTML = text;
+    document.getElementById("ff").innerHTML = text2;
 
     function spare(value) {
         text += "<li id=" + yesnt + ">" + value + "</li>";
+        text2 += "<li>" + value + "</li>";
         yesnt += 1;
     }
 }
